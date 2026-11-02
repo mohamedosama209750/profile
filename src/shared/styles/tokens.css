@@ -1,0 +1,99 @@
+:root {
+  color-scheme: dark;
+
+  --font-sans: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif;
+  --font-mono: "SF Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --bg-base: #000000;
+  --text-primary: #ffffff;
+  --text-secondary: rgba(229, 229, 229, 0.72);
+  --text-tertiary: rgba(229, 229, 229, 0.57);
+
+  --accent: #fca311;
+  --accent-ink: #fca311;
+  --accent-soft: #e5e5e5;
+  --accent-alt: #e5e5e5;
+  --accent-contrast: #000000;
+  --success: #fca311;
+
+  --orb-navy: #14213d;
+  --orb-navy-opacity: 0.85;
+  --orb-amber: #fca311;
+  --orb-amber-opacity: 0.2;
+  --orb-light: #e5e5e5;
+  --orb-light-opacity: 0.1;
+  --grid-line: rgba(229, 229, 229, 0.06);
+
+  --glass-bg: linear-gradient(
+    140deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(20, 33, 61, 0.24) 46%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  --glass-bg-solid: rgba(20, 33, 61, 0.94);
+  --glass-border: rgba(229, 229, 229, 0.2);
+  --glass-highlight: rgba(255, 255, 255, 0.3);
+  --glass-shadow: 0 30px 70px -24px rgba(0, 0, 0, 0.85);
+  --glass-shadow-hover: 0 40px 90px -28px rgba(0, 0, 0, 0.95);
+  --glass-blur: 26px;
+  --spot-color: rgba(252, 163, 17, 0.14);
+
+  --panel-bg: rgba(255, 255, 255, 0.05);
+  --panel-border: rgba(229, 229, 229, 0.12);
+  --track: rgba(229, 229, 229, 0.1);
+
+  --radius-xl: 32px;
+  --radius-lg: 26px;
+  --radius-md: 18px;
+  --radius-sm: 12px;
+  --radius-pill: 999px;
+
+  --focus-ring: rgba(252, 163, 17, 0.8);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --name-gradient: linear-gradient(100deg, #ffffff 0%, #e5e5e5 42%, #fca311 72%, #e5e5e5 100%);
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+
+  --bg-base: #e5e5e5;
+  --text-primary: #14213d;
+  --text-secondary: rgba(20, 33, 61, 0.72);
+  --text-tertiary: rgba(20, 33, 61, 0.66);
+
+  --accent: #fca311;
+  --accent-ink: #14213d;
+  --accent-soft: #ffffff;
+  --accent-alt: #14213d;
+  --accent-contrast: #000000;
+  --success: #14213d;
+
+  --orb-navy: #14213d;
+  --orb-navy-opacity: 0.12;
+  --orb-amber: #fca311;
+  --orb-amber-opacity: 0.28;
+  --orb-light: #ffffff;
+  --orb-light-opacity: 0.9;
+  --grid-line: rgba(20, 33, 61, 0.07);
+
+  --glass-bg: linear-gradient(
+    140deg,
+    rgba(255, 255, 255, 0.78) 0%,
+    rgba(255, 255, 255, 0.42) 46%,
+    rgba(255, 255, 255, 0.6) 100%
+  );
+  --glass-bg-solid: rgba(255, 255, 255, 0.94);
+  --glass-border: rgba(255, 255, 255, 0.9);
+  --glass-highlight: rgba(255, 255, 255, 0.95);
+  --glass-shadow: 0 30px 70px -30px rgba(20, 33, 61, 0.2);
+  --glass-shadow-hover: 0 40px 80px -30px rgba(20, 33, 61, 0.28);
+  --glass-blur: 22px;
+  --spot-color: rgba(252, 163, 17, 0.16);
+
+  --panel-bg: rgba(255, 255, 255, 0.55);
+  --panel-border: rgba(20, 33, 61, 0.1);
+  --track: rgba(20, 33, 61, 0.1);
+
+  --focus-ring: rgba(20, 33, 61, 0.55);
+  --name-gradient: linear-gradient(100deg, #000000 0%, #14213d 55%, #000000 100%);
+}

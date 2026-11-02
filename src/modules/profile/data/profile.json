@@ -1,0 +1,65 @@
+{
+  "name": "Mohamed Osama",
+  "initials": "MO",
+  "handle": "@mohamedosama",
+  "role": "Product Designer & Front-End Engineer",
+  "location": "Cairo, EG",
+  "availability": "Available for select projects",
+  "avatar": "/avatar.jpg",
+  "tagline": "I design calm, tactile interfaces — then build them with clean, accessible React.",
+  "about": [
+    "I'm a product designer and front-end engineer with eight years of experience turning fuzzy ideas into shipped software. My sweet spot is the overlap between visual craft and engineering: design systems, motion, and interfaces that feel alive without getting in the way.",
+    "Lately I've been exploring depth and translucency on the web — glass surfaces, layered light, and micro-interactions that make a screen feel physical. When I'm not pushing pixels, I'm trail running or perfecting a pour-over."
+  ],
+  "toolbox": ["React", "TypeScript", "CSS", "Vite", "Figma", "Framer Motion"],
+  "stats": [
+    { "value": "8+", "label": "Years designing & building" },
+    { "value": "40+", "label": "Products shipped" },
+    { "value": "12", "label": "Design awards" }
+  ],
+  "skills": [
+    { "name": "React & TypeScript", "level": 95 },
+    { "name": "Design systems", "level": 92 },
+    { "name": "Motion & interaction", "level": 88 },
+    { "name": "Accessibility", "level": 90 },
+    { "name": "Product strategy", "level": 84 },
+    { "name": "Prototyping", "level": 86 }
+  ],
+  "projects": [
+    {
+      "title": "Aperture",
+      "year": "2025",
+      "role": "Lead designer & engineer",
+      "description": "A glass-forward analytics workspace that turns dense product data into calm, glanceable stories.",
+      "tags": ["Product design", "React", "Data viz"]
+    },
+    {
+      "title": "Lumen",
+      "year": "2024",
+      "role": "Design engineer",
+      "description": "A lighting-control companion app with spatial controls, ambient presets, and a tactile motion language.",
+      "tags": ["Mobile", "Motion", "Design system"]
+    },
+    {
+      "title": "Field Notes",
+      "year": "2023",
+      "role": "Solo build",
+      "description": "An offline-first writing tool for researchers, built around a command palette and beautifully quiet typography.",
+      "tags": ["React", "PWA", "Typography"]
+    }
+  ],
+  "socials": [
+    {
+      "label": "GitHub",
+      "handle": "@mohamedosama209750",
+      "url": "https://github.com/mohamedosama209750",
+      "icon": "github"
+    },
+    {
+      "label": "LinkedIn",
+      "handle": "in/mohamed-osama-936244333",
+      "url": "https://www.linkedin.com/in/mohamed-osama-936244333/",
+      "icon": "linkedin"
+    }
+  ]
+}

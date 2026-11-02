@@ -1,0 +1,236 @@
+.hero {
+  padding: clamp(24px, 4vw, 46px);
+}
+
+.aurora {
+  position: absolute;
+  top: -170px;
+  right: -110px;
+  z-index: 0;
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--accent) 34%, transparent),
+    transparent 66%
+  );
+  filter: blur(18px);
+  pointer-events: none;
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 46px);
+  align-items: center;
+}
+
+.avatarColumn {
+  position: relative;
+  width: clamp(132px, 17vw, 176px);
+}
+
+.avatarWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  padding: 4px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 140deg,
+    var(--accent),
+    var(--accent-soft),
+    var(--accent)
+  );
+  box-shadow: 0 22px 60px -22px color-mix(in srgb, var(--accent) 75%, transparent);
+}
+
+.avatarWrap::before {
+  content: "";
+  position: absolute;
+  inset: -16px;
+  z-index: -1;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--accent) 42%, transparent),
+    transparent 70%
+  );
+  filter: blur(18px);
+  animation: breathe 6s ease-in-out infinite;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  border: 2px solid color-mix(in srgb, var(--bg-base) 62%, transparent);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatarBadge {
+  position: absolute;
+  right: -18px;
+  bottom: -10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  background: var(--glass-bg);
+  box-shadow: var(--glass-shadow);
+  -webkit-backdrop-filter: blur(16px) saturate(150%);
+  backdrop-filter: blur(16px) saturate(150%);
+  line-height: 1.2;
+}
+
+.avatarBadge strong {
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  letter-spacing: -0.02em;
+}
+
+.avatarBadge span {
+  color: var(--text-tertiary);
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.content {
+  min-width: 0;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius-pill);
+  background: var(--panel-bg);
+  color: var(--text-secondary);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--success);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--success) 16%, transparent);
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+.name {
+  margin-bottom: 0.35rem;
+  padding-bottom: 0.06em;
+  background: var(--name-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: clamp(2.6rem, 6.4vw, 4.6rem);
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 0.98;
+}
+
+.role {
+  margin-bottom: 0.9rem;
+  color: var(--accent-ink);
+  font-size: clamp(0.94rem, 1.4vw, 1.06rem);
+  font-weight: 600;
+  letter-spacing: 0.005em;
+}
+
+.tagline {
+  max-width: 58ch;
+  margin-bottom: 1.35rem;
+  color: var(--text-secondary);
+  font-size: clamp(0.94rem, 1.2vw, 1.04rem);
+  line-height: 1.7;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 1.2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-tertiary);
+  font-size: 0.78rem;
+}
+
+.metaItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.metaItem svg {
+  width: 0.95rem;
+  height: 0.95rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    opacity: 0.65;
+    transform: scale(0.96);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--success) 18%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 0 6px color-mix(in srgb, var(--success) 6%, transparent);
+  }
+}
+
+@media (max-width: 760px) {
+  .inner {
+    grid-template-columns: 1fr;
+    justify-items: start;
+    gap: 26px;
+  }
+
+  .avatarColumn {
+    width: 124px;
+  }
+
+  .status {
+    margin-bottom: 0.85rem;
+  }
+
+  .tagline {
+    margin-bottom: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .avatarBadge {
+    display: none;
+  }
+}

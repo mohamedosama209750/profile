@@ -1,0 +1,60 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.grid > * {
+  display: flex;
+  min-width: 0;
+}
+
+.grid > * > * {
+  flex: 1;
+}
+
+.about {
+  grid-column: span 7;
+}
+
+.stats {
+  grid-column: span 5;
+}
+
+.skills {
+  grid-column: span 5;
+}
+
+.socials {
+  grid-column: span 7;
+}
+
+.projects,
+.contact {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 960px) {
+  .about,
+  .stats,
+  .skills,
+  .socials {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    gap: 14px;
+  }
+
+  .grid {
+    gap: 14px;
+  }
+}

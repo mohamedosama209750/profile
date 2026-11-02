@@ -1,0 +1,20 @@
+.shell {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  padding-block: 22px 56px;
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding-block: 16px 40px;
+  }
+}

@@ -1,0 +1,118 @@
+.card {
+  padding: clamp(22px, 3vw, 32px);
+}
+
+.head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.count {
+  padding: 0.3rem 0.6rem;
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius-pill);
+  color: var(--text-tertiary);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  padding: 1.15rem;
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius-md);
+  background: var(--panel-bg);
+  transition:
+    transform 0.35s var(--ease-out),
+    border-color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.project:hover {
+  border-color: color-mix(in srgb, var(--accent) 35%, var(--panel-border));
+  background: color-mix(in srgb, var(--accent) 7%, var(--panel-bg));
+  transform: translateY(-2px);
+}
+
+.projectTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.85rem;
+}
+
+.index {
+  color: var(--accent-ink);
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.08em;
+}
+
+.year {
+  color: var(--text-tertiary);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+}
+
+.title {
+  margin-bottom: 0.15rem;
+  color: var(--text-primary);
+  font-size: 1.15rem;
+  font-weight: 650;
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+}
+
+.role {
+  margin-bottom: 0.65rem;
+  color: var(--accent-ink);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.description {
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  line-height: 1.65;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.32rem;
+  margin-top: auto;
+}
+
+.tag {
+  font-size: 0.58rem;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .head {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
