@@ -22,6 +22,16 @@ npm run preview  # serve the production build
 npm run resume   # regenerate public/resume.pdf from profile.json
 ```
 
+## Hosting (GitHub Pages)
+
+Live site: **https://mohamedosama209750.github.io/profile/**
+
+Pushing to `main` triggers `.github/workflows/deploy.yml`, which installs dependencies, builds, and publishes `dist/` to GitHub Pages. The Pages source must be set to **GitHub Actions** in the repository settings (already configured).
+
+Because this is a project site served under `/profile/`, `vite.config.js` sets `base: '/profile/'` for production builds. Reference public files through `import.meta.env.BASE_URL` (see the `asset()` helper in `Hero.jsx`) instead of hard-coding `/file.ext`, which would resolve to the domain root and 404.
+
+To host under a different repository name, update `base` in `vite.config.js` to match the repo name.
+
 ## Resume
 
 `public/resume.pdf` is generated from the profile data by `scripts/generate-resume.mjs` with no dependencies. Update `profile.json` and run `npm run resume` to refresh it; the hero's "See my resume" button downloads that file.

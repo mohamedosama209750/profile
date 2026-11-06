@@ -3,6 +3,9 @@ import Button from '../../../../shared/components/Button/Button';
 import GlassCard from '../../../../shared/components/GlassCard/GlassCard';
 import styles from './Hero.module.css';
 
+// Public assets live at the site base (`/` locally, `/profile/` on GitHub Pages).
+const asset = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
+
 export default function Hero({ profile }) {
   return (
     <GlassCard as="section" interactive className={styles.hero} aria-labelledby="profile-name">
@@ -13,7 +16,7 @@ export default function Hero({ profile }) {
           <div className={styles.avatarWrap}>
             <img
               className={styles.avatar}
-              src={profile.avatar}
+              src={asset(profile.avatar)}
               alt={`Portrait of ${profile.name}`}
               width="176"
               height="176"
@@ -51,7 +54,7 @@ export default function Hero({ profile }) {
               <FiArrowUpRight aria-hidden="true" />
             </Button>
             <Button
-              href="/resume.pdf"
+              href={asset('/resume.pdf')}
               download="Mohamed-Osama-Resume.pdf"
               variant="ghost"
             >
