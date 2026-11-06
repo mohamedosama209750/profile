@@ -60,6 +60,12 @@
       "handle": "in/mohamed-osama-936244333",
       "url": "https://www.linkedin.com/in/mohamed-osama-936244333/",
       "icon": "linkedin"
+    },
+    {
+      "label": "TikTok",
+      "handle": "@engmohamed.osama",
+      "url": "https://www.tiktok.com/@engmohamed.osama",
+      "icon": "tiktok"
     }
   ]
 }
