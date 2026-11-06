@@ -89,6 +89,33 @@
   line-height: 1.65;
 }
 
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
+  align-self: flex-start;
+  margin-bottom: 0.85rem;
+  color: var(--accent-ink);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-underline-offset: 3px;
+}
+
+.link svg {
+  width: 0.9rem;
+  height: 0.9rem;
+  transition: transform 0.3s var(--ease-out);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:hover svg {
+  transform: translate(2px, -2px);
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;

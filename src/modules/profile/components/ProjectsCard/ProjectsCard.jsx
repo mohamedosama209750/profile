@@ -1,3 +1,4 @@
+import { FiArrowUpRight } from 'react-icons/fi';
 import GlassCard from '../../../../shared/components/GlassCard/GlassCard';
 import SectionHeading from '../../../../shared/components/SectionHeading/SectionHeading';
 import Tag from '../../../../shared/components/Tag/Tag';
@@ -29,6 +30,18 @@ export default function ProjectsCard({ projects }) {
             <h3 className={styles.title}>{project.title}</h3>
             <p className={styles.role}>{project.role}</p>
             <p className={styles.description}>{project.description}</p>
+            {project.url && (
+              <a
+                className={styles.link}
+                href={project.url}
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label={`Open ${project.title} live demo in a new tab`}
+              >
+                Live demo
+                <FiArrowUpRight aria-hidden="true" />
+              </a>
+            )}
             <ul className={styles.tags} aria-label={`${project.title} tags`}>
               {project.tags.map((tag) => (
                 <li key={tag}>

@@ -217,20 +217,23 @@ heading('Selected Projects', y);
 y -= 23;
 
 const projectGap = 22;
-profile.projects.forEach((project) => {
-  const titleWidth = text(MARGIN, y, 11.5, 'F2', C.navy, clean(project.title));
-  text(PAGE_W - MARGIN, y, 9, 'F1', C.navy, project.year, { align: 'right' });
-  const roleX = MARGIN + titleWidth + 12;
-  text(roleX, y + 1, 8.5, 'F2', C.navy, clean(project.role));
-  y -= 12.5;
+[...profile.projects]
+  .sort((a, b) => Number(b.year) - Number(a.year))
+  .slice(0, 3)
+  .forEach((project) => {
+    const titleWidth = text(MARGIN, y, 11.5, 'F2', C.navy, clean(project.title));
+    text(PAGE_W - MARGIN, y, 9, 'F1', C.navy, project.year, { align: 'right' });
+    const roleX = MARGIN + titleWidth + 12;
+    text(roleX, y + 1, 8.5, 'F2', C.navy, clean(project.role));
+    y -= 12.5;
 
-  for (const textLine of wrap(clean(project.description), 9.5, CONTENT_W)) {
-    text(MARGIN, y, 9.5, 'F1', C.navy, textLine);
-    y -= 12;
-  }
+    for (const textLine of wrap(clean(project.description), 9.5, CONTENT_W)) {
+      text(MARGIN, y, 9.5, 'F1', C.navy, textLine);
+      y -= 12;
+    }
 
-  y -= projectGap;
-});
+    y -= projectGap;
+  });
 
 // ---------------------------------------------------------------------------
 // Links

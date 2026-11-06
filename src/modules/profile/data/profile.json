@@ -51,6 +51,22 @@
       "role": "Solo build",
       "description": "An offline-first writing tool for researchers, built around a command palette and beautifully quiet typography.",
       "tags": ["React", "PWA", "Typography"]
+    },
+    {
+      "title": "Focus Timer",
+      "year": "2026",
+      "role": "Solo build",
+      "description": "A pomodoro-style focus timer with focus, short-break, and long-break modes, configurable durations, and keyboard controls.",
+      "tags": ["Timer", "UI", "Productivity"],
+      "url": "https://time-rho-five.vercel.app/"
+    },
+    {
+      "title": "iPhone 13 Pro Max",
+      "year": "2026",
+      "role": "Solo build",
+      "description": "A responsive product landing page with a hero, product grid, news, and contact sections.",
+      "tags": ["Landing page", "Responsive", "Front-end"],
+      "url": "https://iphone-ivory-three.vercel.app/"
     }
   ],
   "socials": [
