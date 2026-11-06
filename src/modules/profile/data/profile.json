@@ -6,6 +6,11 @@
   "location": "Cairo, EG",
   "availability": "Available for select projects",
   "avatar": "/avatar.jpg",
+  "phone": {
+    "display": "+20 11 4008 3401",
+    "tel": "+201140083401",
+    "whatsapp": "201140083401"
+  },
   "tagline": "I design calm, tactile interfaces — then build them with clean, accessible React.",
   "about": [
     "I'm a product designer and front-end engineer with eight years of experience turning fuzzy ideas into shipped software. My sweet spot is the overlap between visual craft and engineering: design systems, motion, and interfaces that feel alive without getting in the way.",
@@ -66,6 +71,12 @@
       "handle": "@engmohamed.osama",
       "url": "https://www.tiktok.com/@engmohamed.osama",
       "icon": "tiktok"
+    },
+    {
+      "label": "Facebook",
+      "handle": "facebook.com/share/1Dg8hiMPRt",
+      "url": "https://www.facebook.com/share/1Dg8hiMPRt/",
+      "icon": "facebook"
     }
   ]
 }

@@ -1,5 +1,5 @@
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa6';
-import { FiMapPin } from 'react-icons/fi';
+import { FaGithub, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa6';
+import { FiMapPin, FiPhone } from 'react-icons/fi';
 import Button from '../../../../shared/components/Button/Button';
 import GlassCard from '../../../../shared/components/GlassCard/GlassCard';
 import styles from './ContactCard.module.css';
@@ -9,6 +9,7 @@ const LINK_PROPS = { target: '_blank', rel: 'noopener noreferrer' };
 export default function ContactCard({ profile }) {
   const github = profile.socials.find((social) => social.icon === 'github');
   const linkedin = profile.socials.find((social) => social.icon === 'linkedin');
+  const { phone } = profile;
 
   return (
     <GlassCard
@@ -27,9 +28,32 @@ export default function ContactCard({ profile }) {
             Let&apos;s make something worth touching.
           </h2>
           <p className={styles.description}>
-            Have a product, a wild idea, or just want to compare notes? The fastest way to reach
-            me is LinkedIn.
+            Have a product, a wild idea, or just want to compare notes? Call, send a WhatsApp
+            message, or reach out on LinkedIn.
           </p>
+
+          {phone ? (
+            <div className={styles.phoneBlock}>
+              <span className={styles.phoneLabel}>Call or WhatsApp</span>
+              <a className={styles.phoneNumber} href={`tel:${phone.tel}`}>
+                {phone.display}
+              </a>
+              <div className={styles.phoneActions}>
+                <a
+                  className={`${styles.phoneAction} ${styles.phoneActionPrimary}`}
+                  href={`https://wa.me/${phone.whatsapp}`}
+                  {...LINK_PROPS}
+                >
+                  <FaWhatsapp aria-hidden="true" />
+                  WhatsApp
+                </a>
+                <a className={styles.phoneAction} href={`tel:${phone.tel}`}>
+                  <FiPhone aria-hidden="true" />
+                  Call
+                </a>
+              </div>
+            </div>
+          ) : null}
         </div>
 
         <div className={styles.actions}>

@@ -74,6 +74,7 @@ src/
 
 - **Content:** edit `src/modules/profile/data/profile.json` (name, bio, stats, skills, projects, socials).
 - **Photo:** replace `public/avatar.jpg`; keep the `avatar` path in the JSON in sync.
+- **Phone / WhatsApp:** edit the `phone` object in `profile.json` (`display`, `tel`, `whatsapp`). The number is shown in the contact card with Call and WhatsApp actions.
 - **Social icons:** add the mapping in `src/modules/profile/components/SocialsCard/socialIcons.js`.
 - **Colors and glass:** edit `src/shared/styles/tokens.css`; both dark and `[data-theme="light"]` palettes live there.
 - **Favicon / meta:** `public/favicon.svg` and `index.html`.

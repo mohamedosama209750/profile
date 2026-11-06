@@ -6,7 +6,7 @@ endobj
 << /Type /Pages /Kids [3 0 R] /Count 1 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R /Annots [7 0 R 8 0 R 9 0 R 10 0 R] >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R /Annots [7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R] >>
 endobj
 4 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
@@ -15,7 +15,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
 endobj
 6 0 obj
-<< /Length 5223 >>
+<< /Length 5700 >>
 stream
 q 0.078 0.129 0.239 rg 0 696 595.28 145.89 re f Q
 q 0.988 0.639 0.067 rg 0 692 595.28 4 re f Q
@@ -70,7 +70,13 @@ q 0.078 0.129 0.239 RG 0.5 w 120 249.1 m 271.54 249.1 l S Q
 BT /F2 9.5 Tf 0 Tc 0.078 0.129 0.239 rg 1 0 0 1 48 232.3 Tm (LinkedIn) Tj ET
 BT /F1 9.5 Tf 0 Tc 0.078 0.129 0.239 rg 1 0 0 1 120 232.3 Tm (www.linkedin.com/in/mohamed-osama-936244333) Tj ET
 q 0.078 0.129 0.239 RG 0.5 w 120 230.1 m 333.29 230.1 l S Q
-BT /F1 9 Tf 0 Tc 0.078 0.129 0.239 rg 1 0 0 1 48 201.3 Tm (References and full project case studies available on request.) Tj ET
+BT /F2 9.5 Tf 0 Tc 0.078 0.129 0.239 rg 1 0 0 1 48 213.3 Tm (TikTok) Tj ET
+BT /F1 9.5 Tf 0 Tc 0.078 0.129 0.239 rg 1 0 0 1 120 213.3 Tm (www.tiktok.com/@engmohamed.osama) Tj ET
+q 0.078 0.129 0.239 RG 0.5 w 120 211.1 m 287.49 211.1 l S Q
+BT /F2 9.5 Tf 0 Tc 0.078 0.129 0.239 rg 1 0 0 1 48 194.3 Tm (Facebook) Tj ET
+BT /F1 9.5 Tf 0 Tc 0.078 0.129 0.239 rg 1 0 0 1 120 194.3 Tm (www.facebook.com/share/1Dg8hiMPRt) Tj ET
+q 0.078 0.129 0.239 RG 0.5 w 120 192.1 m 285.24 192.1 l S Q
+BT /F1 9 Tf 0 Tc 0.078 0.129 0.239 rg 1 0 0 1 48 163.3 Tm (References and full project case studies available on request.) Tj ET
 q 0.078 0.129 0.239 rg 0 0 595.28 72 re f Q
 q 0.988 0.639 0.067 rg 0 72 595.28 3 re f Q
 BT /F1 9 Tf 0 Tc 0.898 0.898 0.898 rg 1 0 0 1 48 32 Tm (Mohamed Osama  |  Cairo, EG  |  @mohamedosama) Tj ET
@@ -89,21 +95,29 @@ endobj
 10 0 obj
 << /Type /Annot /Subtype /Link /Rect [120 229.3 333.29 241.3] /Border [0 0 0] /A << /S /URI /URI (https://www.linkedin.com/in/mohamed-osama-936244333/) >> >>
 endobj
+11 0 obj
+<< /Type /Annot /Subtype /Link /Rect [120 210.3 287.49 222.3] /Border [0 0 0] /A << /S /URI /URI (https://www.tiktok.com/@engmohamed.osama) >> >>
+endobj
+12 0 obj
+<< /Type /Annot /Subtype /Link /Rect [120 191.3 285.24 203.3] /Border [0 0 0] /A << /S /URI /URI (https://www.facebook.com/share/1Dg8hiMPRt/) >> >>
+endobj
 xref
-0 11
+0 13
 0000000000 65535 f 
 0000000009 00000 n 
 0000000058 00000 n 
 0000000115 00000 n 
-0000000292 00000 n 
-0000000389 00000 n 
-0000000491 00000 n 
-0000005766 00000 n 
-0000005919 00000 n 
-0000006091 00000 n 
-0000006249 00000 n 
+0000000306 00000 n 
+0000000403 00000 n 
+0000000505 00000 n 
+0000006257 00000 n 
+0000006410 00000 n 
+0000006582 00000 n 
+0000006740 00000 n 
+0000006914 00000 n 
+0000007076 00000 n 
 trailer
-<< /Size 11 /Root 1 0 R >>
+<< /Size 13 /Root 1 0 R >>
 startxref
-6423
+7240
 %%EOF

@@ -45,7 +45,7 @@ One app, isolated feature modules, one-way imports.
 - **Theme key:** `profile-theme` in `localStorage` is duplicated in `src/modules/theme/ThemeProvider.jsx` and the inline script in `index.html`. Keep them in sync to avoid a flash on first paint.
 - **Theme switching:** `ThemeProvider` adds `theme-switching` to `<html>` for 220ms to suppress transitions. Do not add `color` transitions to theme-dependent text; that caused light-mode contrast failures.
 - **Glass styling:** use `GlassCard` for cards. It owns the blur, border, shadow, spotlight-on-hover, and the no-backdrop-filter fallback.
-- **Contact:** there is no email field. Contact actions are built from the `socials` entries (LinkedIn + GitHub); keep those URLs in `profile.json` current.
+- **Contact:** there is no email field. Contact actions are built from `profile.socials` (LinkedIn, GitHub, TikTok, Facebook) plus `profile.phone`; keep those URLs and numbers current in `profile.json`.
 - **Resume:** `scripts/generate-resume.mjs` is dependency-free and writes `public/resume.pdf`; it throws if the layout overflows one page. Keep profile text concise when adding projects.
 - **GitHub Pages base path:** production builds use `base: '/profile/'` so the project site works at `https://mohamedosama209750.github.io/profile/`. Never hard-code `/avatar.jpg` or `/resume.pdf` in components; use the `asset()` helper (`import.meta.env.BASE_URL`) in `Hero.jsx`. Deployment runs via `.github/workflows/deploy.yml` on every push to `main`.
 - **Accessibility is part of done:** keep section `aria-labelledby` wiring, focus-visible styles, alt text, and `prefers-reduced-motion` behavior. Both themes were verified at Lighthouse 100 for accessibility, best practices, and SEO.

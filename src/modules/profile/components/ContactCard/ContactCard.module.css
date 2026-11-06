@@ -59,6 +59,74 @@
   line-height: 1.65;
 }
 
+.phoneBlock {
+  margin-top: 1.15rem;
+}
+
+.phoneLabel {
+  display: block;
+  margin-bottom: 0.1rem;
+  color: var(--text-tertiary);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.phoneNumber {
+  display: inline-block;
+  color: var(--accent-ink);
+  font-family: var(--font-mono);
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-underline-offset: 3px;
+}
+
+.phoneNumber:hover {
+  text-decoration: underline;
+}
+
+.phoneActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.65rem;
+}
+
+.phoneAction {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--panel-border);
+  border-radius: 999px;
+  background: var(--panel-bg);
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition:
+    border-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.3s var(--ease-out);
+}
+
+.phoneAction svg {
+  width: 0.95rem;
+  height: 0.95rem;
+}
+
+.phoneAction:hover {
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--panel-border));
+  color: var(--accent-ink);
+  transform: translateY(-1px);
+}
+
+.phoneActionPrimary {
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--panel-border));
+  color: var(--accent-ink);
+}
+
 .actions {
   display: flex;
   flex-wrap: wrap;
